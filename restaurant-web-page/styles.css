@@ -1,0 +1,226 @@
+body{
+    background-color: #AC773C;
+    overflow-x: hidden;
+}
+#logo{
+    width: 10vw;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #EECFC5;
+    box-shadow: 0vw 1px 75px -30px #301900 ;
+    position: fixed;
+    z-index: 100;
+}
+.topnav a{
+    float:right;
+    display: flexbox;
+    color: #583103;
+    text-align: center;
+    padding: 2vw 3vw;
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+.topnav img,h1{
+    float: left;
+    display: block;
+    color: #583103;
+    text-align: center;
+    padding: 0vw 3vw;
+    text-decoration: none;
+    font-size: 3vw;
+}
+.topnav h1{
+    padding: 1.5vw 3vw 0vw;
+}
+.topnav a:hover {
+    background-color: #AC773C;
+    color: rgb(255, 255, 255);
+}
+
+.topnav a.active {
+    background-color: #AC773C;
+    color: white;
+}
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+.image-container{
+    width: 20%;
+    position: absolute;
+    border-radius: 5%;
+    margin: 5% 10%;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border: 5px solid #4b2701;
+    overflow: hidden;
+}
+.wrapper{
+    width:100%;
+    display: flex;
+    animation: slide 16s infinite;
+}
+.wrapper img{
+    width: 100%;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+.text{
+    float:right;
+    margin: 5% 10%;
+    width: 40%;
+    color:#EECFC5;  
+}
+.text p{
+    font-size: 1.5vw;
+    color:#301900;
+    font-weight: 500;
+}
+
+#call-button{
+    background-color: #301900;
+    color: #EECFC5;
+    font-size: 1.75vw;
+    padding: 1.5vw;
+    text-decoration: none;
+    border-radius: 1vw;
+    box-shadow: 0vw 0.25vw 1vw #4b2701;
+}
+#call-button:hover{
+    border: 0.2vw solid #301900;
+    background-color: #EECFC5;
+    color: #301900;
+    box-shadow: 0vw 0.25vw 1vw #583103;
+}
+.menu {
+    width: 100%;
+    min-height: fit-content;
+    background: #AC773C;
+    margin-top: 20%;
+}
+.menu-image {
+    perspective: 2000px;
+    width:fit-content;
+    position: relative;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    transform-style: preserve-3d;
+}
+.menu-image img {
+    width: 60%;
+
+    transform: rotateX(70deg) rotateZ(-60deg) translate3d(-120px, 0px, 70px);
+    box-shadow: -80px 60px 15px 5px rgba(0,0,0,0.4);
+    transition: all .4s;
+    transform-style: preserve-3d;
+}
+.menu-image:hover img {
+    transform: rotateX(0deg) rotateZ(0deg) translate3d(0px, 0px, 0px);
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+    width: 80%;
+}
+#menu-head{
+    color: #EECFC5;
+}
+.heading{
+    margin-top: -5%;
+    font-size: 3vw;
+    font-weight: 600;
+    color: #EECFC5;
+}
+
+.home{
+    padding-top: 7%;
+}
+
+.texts{
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+.footer{
+    background-color: #EECFC5;
+    width: 100%;
+    padding: 1%;
+    box-shadow: 0vw 1px 75px -40px #301900 ;
+}
+.footer a{
+    margin: 7%;
+    text-decoration: none;
+}
+.footer img{
+    display:flexbox;
+    width: 5%;
+    background-color: #EECFC5;
+}
+#contact{
+    margin-top: 0%;
+}
+.tikka-left{
+    width: 20%;
+    margin-left: -2%;
+}
+.tikka-right{
+    width: 20%;
+    margin-left: 81%;
+    transform: rotate(180deg);
+}
+::-webkit-scrollbar {
+    width: 0.75vw;
+}
+
+::-webkit-scrollbar-track {
+    background: #d4b3a7; 
+}
+::-webkit-scrollbar-thumb {
+    background: #4b2701; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #301900; 
+}
