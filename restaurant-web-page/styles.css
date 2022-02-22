@@ -20,6 +20,7 @@ body{
     padding: 2vw 3vw;
     text-decoration: none;
     font-size: 1.5vw;
+    border-left: #301900 solid 1px;
 }
 .topnav img,h1{
     float: left;
